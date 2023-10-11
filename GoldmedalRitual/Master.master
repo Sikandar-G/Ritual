@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/Login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <link href="<%=ResolveUrl("Content/bootstrap.min.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("Content/JqueryToastCss.css")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("Content/JqueryToastCss.css")%>" rel="stylesheet" />
+
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
+    <script src="Scripts/J-Query-Min.js"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("Scripts/bootstrap.bundle.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("Scripts/Custom_Validation_Scripts.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("Scripts/JqueryToast.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("Scripts/CustomToast.js")%>"></script>
+
+    <style>
+        .form-control {
+            position: relative;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .form-control:focus {
+                outline: none;
+                border-bottom: 2px solid #007BFF;
+            }
+
+            .form-control::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #007BFF;
+                transition: width 0.3s ease-in-out;
+            }
+
+            .form-control:focus::after {
+                width: 100%;
+            }
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.6; /* Optional: Makes the button look faded */
+        }
+
+        .dxlpLoadingPanel_MaterialCompact .dxlp-loadingImage, .dxflFormLayout_MaterialCompact.dialog-formlayout.dialog-preparing:after, .dxlpLoadingPanelWithContent_MaterialCompact .dxlp-loadingImage {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            -khtml-border-radius: 50%;
+            border-radius: 50%;
+            animation: dxLoadSpinSys 1s linear infinite;
+            border: 4px solid #6b0218;
+            border-top: 4px solid #EEE;
+            width: 24px;
+            height: 24px;
+        }
+
+        body {
+            background: #f1f1f1;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Navbar-->
+        <%--<div style="padding: 20px;">--%>
+        <nav class=" m-3 navbar BG navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+
+
+                <!-- Left elements -->
+                <div class="d-flex">
+                    <!-- Brand -->
+                    <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                        <img
+                            src="../Content/Images/GP%20LOGO.jpg"
+                            height="30"
+                            alt="G-P LOGO"
+                            loading="lazy"
+                            style="margin-top: 2px;" />
+                    </a>
+                </div>
+
+
+                <!-- Right elements -->
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item me-3 me-lg-1">
+                        <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+                            <img
+                                src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+                                class="rounded-circle"
+                                height="22"
+                                alt="Black and White Portrait of a Man"
+                                loading="lazy" />
+                            <strong class="d-none d-sm-block ms-1 text-light">John</strong>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Right elements -->
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <%--</div>--%>
+
+        <div class="mt-5 m-3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
