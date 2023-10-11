@@ -118,6 +118,7 @@
         <%--</div>--%>
 
         <div class="mt-5 m-3">
+            <asp:ScriptManager runat="server"></asp:ScriptManager>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
