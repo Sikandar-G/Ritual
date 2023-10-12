@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.33026.149
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "G-Pooja", "GoldmedalRitual\", "{F6F21C2F-26BA-4EFF-8394-17503E44D394}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GoldmedalRitual", "GoldmedalRitual\", "{F6F21C2F-26BA-4EFF-8394-17503E44D394}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_55173"
 		Debug.AspNetCompiler.PhysicalPath = "GoldmedalRitual\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55173\"
