@@ -8,6 +8,7 @@
             <div class="col-md-12">
                 <div>SIKANDARSK-G</div>
                 <div>Abdullah</div>
+                    <div>Abdullah--Sikanda</div>
             </div>
         </div>
         <div class="row">
